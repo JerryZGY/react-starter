@@ -12,6 +12,21 @@
 - **[Semantic UI](https://semantic-ui.com)** - UI component framework based around useful principles from natural language.
 - **[Webpack](https://webpack.js.org)** - Bundler for JavaScript and friends.
 
+## Usage
+
+```bash
+# Clone this repository
+git clone https://github.com/JerryZGY/react-starter.git
+# Change directory
+cd react-starter
+# Install node modules
+yarn install
+# Development
+yarn dev
+# Production
+yarn bns
+```
+
 ## Author
 
 JerryZGY <jerryc1214@gmail.com>
