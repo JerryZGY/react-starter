@@ -35,7 +35,7 @@ export default class App extends React.Component<IAppProps, IAppState> {
     const { isLoading } = this.state;
 
     return (
-      <Container style={{ height: '100%' }}>
+      <Container>
         <Grid
           verticalAlign='middle'
           centered
@@ -43,7 +43,7 @@ export default class App extends React.Component<IAppProps, IAppState> {
           textAlign='center'
           relaxed
           stretched
-          style={{ height: '100%' }}
+          style={{ height: '100vh' }}
         >
           <Grid.Row>
             <Grid.Column>
