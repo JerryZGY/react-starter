@@ -14,6 +14,7 @@ import {
 
 interface IAppProps {
   name: string;
+  status: boolean;
 }
 
 interface IAppState {
@@ -31,7 +32,14 @@ export default class App extends React.Component<IAppProps, IAppState> {
   }
 
   public render() {
-    const { name } = this.props;
+    const {
+      name,
+      status,
+    } = this.props;
+    /*
+    const name = this.props.name;
+    const status = this.props.status;
+    */
     const { isLoading } = this.state;
 
     return (
@@ -63,13 +71,13 @@ export default class App extends React.Component<IAppProps, IAppState> {
                     <Step.Description>恭喜你，已經成功啟動 ReactStarter！</Step.Description>
                   </Step.Content>
                 </Step>
-                <Step active>
+                <Step completed>
                   <Step.Content>
                     <Step.Title>JSX</Step.Title>
                     <Step.Description>試試調整 JSX 將本項目打勾</Step.Description>
                   </Step.Content>
                 </Step>
-                <Step>
+                <Step active={status}>
                   <Step.Content>
                     <Step.Title>Props</Step.Title>
                     <Step.Description>加入一個 Props 來改變此 Step 的狀態</Step.Description>
